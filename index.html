@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <!-- tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
     <!-- header start -->
     <header>
@@ -25,5 +27,71 @@
         </div>
     </header>
     <!-- header end -->
+
+    <!-- main start -->
+    <main>
+
+        <!-- players section start-->
+        <section class="players w-10/12 mx-auto grid grid-cols-4 gap-6 my-20">
+            <div class="col-span-3 grid grid-cols-3 gap-8">
+                <!-- single player -->
+                <div class="card card-compact w-full bg-base-100 rounded-none border border-blue-400">
+                    <figure>
+                        <img class="w-full" src="images/messi.png" alt="Messi" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title text-3xl justify-center">Lionel Messi</h2>
+                        <p>36 Goals . 120 Assists</p>
+                        <div class="card-actions justify-center pt-4">
+                            <button class="btn btn-primary btn-wide" onclick="addToLeaderBoard(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- single player -->
+                <div class="card card-compact w-full bg-base-100 rounded-none border border-blue-400">
+                    <figure>
+                        <img class="w-full" src="images/messi.png" alt="Messi" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title text-3xl justify-center">Lionel Messi</h2>
+                        <p>36 Goals . 120 Assists</p>
+                        <div class="card-actions justify-center pt-4">
+                            <button class="btn btn-primary btn-wide" onclick="addToLeaderBoard(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- single player -->
+                <div class="card card-compact w-full bg-base-100 rounded-none border border-blue-400">
+                    <figure>
+                        <img class="w-full" src="images/messi.png" alt="Messi" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title text-3xl justify-center">Lionel Messi</h2>
+                        <p>36 Goals . 120 Assists</p>
+                        <div class="card-actions justify-center pt-4">
+                            <button class="btn btn-primary btn-wide" onclick="addToLeaderBoard(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="leader-board">
+                <!-- leader board -->
+                <div class="list">
+                    <h2 class="text-3xl text-center">Selected 5</h2>
+                    <ol class="list-decimal">
+                        <li>Lionel Messi</li>
+                        <li>Cristiano Ronaldo</li>
+                        <li>Kilien Mbappe</li>
+                        <li>Iniesta</li>
+                        <li>Marcello</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <!-- player section end -->
+
+    </main>
+    <!-- main end -->
 </body>
+
 </html>
