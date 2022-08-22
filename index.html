@@ -50,6 +50,19 @@
                 <!-- single player -->
                 <div class="card card-compact w-full bg-base-100 rounded-none border border-blue-400">
                     <figure>
+                        <img class="w-full" src="images/renato.png" alt="Messi" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title text-3xl justify-center">Lionel Messi</h2>
+                        <p>36 Goals . 120 Assists</p>
+                        <div class="card-actions justify-center pt-4">
+                            <button class="btn btn-primary btn-wide" onclick="addToLeaderBoard(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- single player -->
+                <div class="card card-compact w-full bg-base-100 rounded-none border border-blue-400">
+                    <figure>
                         <img class="w-full" src="images/messi.png" alt="Messi" />
                     </figure>
                     <div class="card-body text-center">
@@ -73,18 +86,65 @@
                         </div>
                     </div>
                 </div>
+                <!-- single player -->
+                <div class="card card-compact w-full bg-base-100 rounded-none border border-blue-400">
+                    <figure>
+                        <img class="w-full" src="images/renato.png" alt="Messi" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title text-3xl justify-center">Lionel Messi</h2>
+                        <p>36 Goals . 120 Assists</p>
+                        <div class="card-actions justify-center pt-4">
+                            <button class="btn btn-primary btn-wide" onclick="addToLeaderBoard(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- single player -->
+                <div class="card card-compact w-full bg-base-100 rounded-none border border-blue-400">
+                    <figure>
+                        <img class="w-full" src="images/messi.png" alt="Messi" />
+                    </figure>
+                    <div class="card-body text-center">
+                        <h2 class="card-title text-3xl justify-center">Lionel Messi</h2>
+                        <p>36 Goals . 120 Assists</p>
+                        <div class="card-actions justify-center pt-4">
+                            <button class="btn btn-primary btn-wide" onclick="addToLeaderBoard(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="leader-board">
+            <div class="leader-board ml-10">
                 <!-- leader board -->
                 <div class="list">
-                    <h2 class="text-3xl text-center">Selected 5</h2>
+                    <h2 class="text-3xl text-left ml-8 mb-8">Selected 5</h2>
                     <ol class="list-decimal">
-                        <li>Lionel Messi</li>
-                        <li>Cristiano Ronaldo</li>
-                        <li>Kilien Mbappe</li>
-                        <li>Iniesta</li>
-                        <li>Marcello</li>
+                        <li class="mb-3 text-xl">Lionel Messi</li>
+                        <li class="mb-3 text-xl">Cristiano Ronaldo</li>
+                        <li class="mb-3 text-xl">Kilien Mbappe</li>
+                        <li class="mb-3 text-xl">Iniesta</li>
+                        <li class="mb-3 text-xl">Marcello</li>
                     </ol>
+                </div>
+
+                <!-- expense section -->
+                <div class="budget mt-20 -ml-6">
+                    <h2 class="text-3xl text-left ml-8 mb-8">Budget</h2>
+                    <div class="flex items-center">
+                        <label for="player">Per Player</label>
+                        <input id="player" class="w-2/4 ml-2 border border-blue-500 px-3 py-1" type="text">
+                    </div>
+                    <button class="text-center btn btn-primary mt-6 w-9/12">Calculate</button>
+                    <p>Player expenses $<span>5000</span></p>
+                    <div class="flex items-center">
+                        <label for="manager">Manager</label>
+                        <input id="manager" class="w-2/4 ml-2 border border-blue-500 px-3 py-1" type="text">
+                    </div>
+                    <div class="flex items-center">
+                        <label for="coach">Per Player</label>
+                        <input id="coach" class="w-2/4 ml-2 border border-blue-500 px-3 py-1" type="text">
+                    </div>
+                    <button class="text-center btn btn-primary mt-6 w-9/12">Calculate Total</button>
+                    <p>Total $<span>11000</span></p>
                 </div>
             </div>
         </section>
