@@ -114,40 +114,50 @@
                 </div>
             </div>
             <div class="leader-board ml-10">
-                <!-- leader board -->
+                <!-- leader board start -->
                 <div class="list">
-                    <h2 class="text-3xl text-left ml-8 mb-8 text-blue-900 font-semibold">Selected 5</h2>
+                    <h2 class="text-3xl text-left ml-2 mb-8 text-blue-900 font-semibold">Selected 5</h2>
                     <ol id="player-list" class="list-decimal">
                         <!-- player will show in here while user select their favorite player -->
                     </ol>
                 </div>
+                <!-- leader board end -->
 
-                <!-- expense section -->
+                <!-- budget start -->
                 <div class="budget mt-20 -ml-6">
-                    <h2 class="text-3xl text-left ml-8 mb-8 text-blue-900 font-semibold">Budget</h2>
-                    <div class="flex items-center">
-                        <label for="player-cost">Per Player</label>
-                        <input id="player-cost" class="w-2/4 ml-2 border border-blue-900 px-3 py-1" type="text">
+                    <!-- player cost start -->
+                    <div class="player-cost">
+                        <h2 class="text-3xl text-left ml-8 mb-8 text-blue-900 font-semibold">Budget</h2>
+                        <div class="flex items-center">
+                            <label for="player-cost">Per Player</label>
+                            <input id="player-cost" class="w-2/4 ml-2 border border-blue-900 px-3 py-1" type="text">
+                        </div>
+                        <button id="player-cost-calculate" class="text-center btn btn-primary mt-6 w-9/12">Calculate</button>
+                        <p class="mt-6 text-xl font-semibold">Player expenses <span class="ml-4 text-red-600">$<span
+                                    id="player-total-cost">00</span></span></p>
                     </div>
-                    <button id="player-cost-calculate"
-                        class="text-center btn btn-primary mt-6 w-9/12">Calculate</button>
-                    <p class="mt-6 text-xl font-semibold">Player expenses <span class="ml-4 text-red-600">$<span
-                                id="player-total-cost">00</span></span></p>
-                    <div class="flex items-center mt-6">
-                        <label for="manager">Manager</label>
-                        <input id="manager" class="w-2/4 ml-4 border border-blue-900 px-3 py-1" type="text">
+                    <!-- player cost end -->
+
+                    <!-- team cost start -->
+                    <div class="total-team-cost">
+                        <div class="flex items-center mt-6">
+                            <label for="manager">Manager</label>
+                            <input id="manager" class="w-2/4 ml-4 border border-blue-900 px-3 py-1" type="text">
+                        </div>
+                        <div class="flex items-center mt-6">
+                            <label for="coach">Coach</label>
+                            <input id="coach" class="w-2/4 ml-9 border border-blue-900 px-3 py-1" type="text">
+                        </div>
+                        <button id="total-cost-calculate" class="text-center btn btn-primary mt-6 w-9/12">Calculate
+                            Total</button>
+                        <div class="flex items-center mt-6">
+                            <p class="text-xl font-semibold">Total</p>
+                            <p class="text-red-600 text-2xl font-bold ml-24">$<span id="grand-total-cost">00</span></p>
+                        </div>
                     </div>
-                    <div class="flex items-center mt-6">
-                        <label for="coach">Coach</label>
-                        <input id="coach" class="w-2/4 ml-9 border border-blue-900 px-3 py-1" type="text">
-                    </div>
-                    <button id="total-cost-calculate" class="text-center btn btn-primary mt-6 w-9/12">Calculate
-                        Total</button>
-                    <div class="flex items-center mt-6">
-                        <p class="text-xl font-semibold">Total</p>
-                        <p class="text-red-600 text-2xl font-bold ml-20">$<span id="grand-total-cost">00</span></p>
-                    </div>
+                    <!-- team cost end -->
                 </div>
+                <!-- budget end -->
             </div>
         </section>
         <!-- player section end -->

@@ -1,3 +1,4 @@
+// getValue function declaration
 function getValue(fieldId) {
     const element = document.getElementById(fieldId);
     if (element.tagName.toLowerCase() === 'input') {
@@ -8,7 +9,6 @@ function getValue(fieldId) {
             return undefined;
         }
         const elementValue = parseInt(elementString);
-        // element.value = '';
         return elementValue;
     } else {
         const elementString = element.innerText;
