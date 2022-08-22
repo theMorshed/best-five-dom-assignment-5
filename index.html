@@ -21,7 +21,7 @@
             <div class="hero-content text-center text-neutral-content">
                 <div class="text-slate-100">
                     <h1 class="mb-5 text-5xl font-bold">Your Favorite Players</h1>
-                    <p class="mb-5">Select Your favorite player form below.</p>
+                    <p class="mb-5">You can pick top most gorgeous FIVE player from below. So why are you waiting!!!</p>
                 </div>
             </div>
         </div>
@@ -112,11 +112,51 @@
                         </div>
                     </div>
                 </div>
+                <!-- single player -->
+                <div class="card card-compact w-full bg-base-100 rounded-none">
+                    <figure>
+                        <img class="w-full" src="images/vitor.png" alt="vitor" />
+                    </figure>
+                    <div class="bg-slate-100 card-body text-center border border-blue-900 border-t-0">
+                        <h2 class="card-title text-3xl justify-center">Vitor Machado</h2>
+                        <p>81 Goals . 96 Assists</p>
+                        <div class="card-actions justify-center pt-4">
+                            <button class="btn btn-primary btn-wide" onclick="addToLeaderBoard(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- single player -->
+                <div class="card card-compact w-full bg-base-100 rounded-none">
+                    <figure>
+                        <img class="w-full" src="images/ramos.png" alt="ramos" />
+                    </figure>
+                    <div class="bg-slate-100 card-body text-center border border-blue-900 border-t-0">
+                        <h2 class="card-title text-3xl justify-center">Sergio Ramos</h2>
+                        <p>67 Goals . 78 Assists</p>
+                        <div class="card-actions justify-center pt-4">
+                            <button class="btn btn-primary btn-wide" onclick="addToLeaderBoard(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- single player -->
+                <div class="card card-compact w-full bg-base-100 rounded-none">
+                    <figure>
+                        <img class="w-full" src="images/renato.png" alt="roben" />
+                    </figure>
+                    <div class="bg-slate-100 card-body text-center border border-blue-900 border-t-0">
+                        <h2 class="card-title text-3xl justify-center">Renato Sanches</h2>
+                        <p>57 Goals . 80 Assists</p>
+                        <div class="card-actions justify-center pt-4">
+                            <button class="btn btn-primary btn-wide" onclick="addToLeaderBoard(this)">Select</button>
+                        </div>
+                    </div>
+                </div>
             </div>
+
             <div class="leader-board ml-10">
                 <!-- leader board start -->
                 <div class="list">
-                    <h2 class="text-3xl text-left ml-2 mb-8 text-blue-900 font-semibold">Selected 5</h2>
+                    <h2 class="text-3xl text-left ml-2 mb-8 text-blue-900 font-semibold">Picked Players</h2>
                     <ol id="player-list" class="list-decimal">
                         <!-- player will show in here while user select their favorite player -->
                     </ol>
@@ -160,10 +200,16 @@
                 <!-- budget end -->
             </div>
         </section>
-        <!-- player section end -->
+        <!-- players section end -->
 
     </main>
     <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="bg-slate-100 py-10 text-center border border-t-blue-900">
+        <p>Copyright @ 2022 All Rights Reserved.</p>
+    </footer>
+    <!-- footer end -->
 
     <!-- javascript file -->
     <script src="js/library.js"></script>
