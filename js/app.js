@@ -32,9 +32,13 @@ document.getElementById('player-cost-calculate').addEventListener('click', funct
     const perPlayerCostField = document.getElementById('player-total-cost');
     // getValue function invoke for getting input field value
     const perPlayerCost = getValue('player-cost');
-    if (perPlayerCost !== undefined) {
-        const playerCost = perPlayerCost * playerList.length;
-        perPlayerCostField.innerText = playerCost;
+    if (perPlayerCost > 0) {
+        if (perPlayerCost !== undefined) {
+            const playerCost = perPlayerCost * playerList.length;
+            perPlayerCostField.innerText = playerCost;
+        }
+    } else {
+        alert('Please write a positve number.');
     }
 });
 
@@ -47,9 +51,13 @@ document.getElementById('total-cost-calculate').addEventListener('click', functi
     // getValue function invoke for getting HTML element value
     const playerTotalCost = getValue('player-total-cost');
 
-    // check input value not number or NaN
-    if (managerCost !== undefined && coachCost !== undefined) {
-        const grandTotalCost = managerCost + coachCost + playerTotalCost;
-        grandTotalCostElement.innerText = grandTotalCost;
+    // check input value not number or NaN or negative number
+    if (managerCost > 0 && coachCost > 0) {
+        if (managerCost !== undefined && coachCost !== undefined) {
+            const grandTotalCost = managerCost + coachCost + playerTotalCost;
+            grandTotalCostElement.innerText = grandTotalCost;
+        }
+    } else {
+        alert('Please write a positive number');
     }
 });
